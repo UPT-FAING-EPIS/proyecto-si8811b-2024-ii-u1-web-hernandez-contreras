@@ -10,6 +10,6 @@ describe ("<Login/>", () => {
 
         expect (usertest).toBeInTheDocument();
         expect (passwordtest).toBeInTheDocument();
-        expect (button).toBeInTheDocument();
+        expect (buttontest).toBeInTheDocument();
     });
 });
