@@ -5,7 +5,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Login /> {/* muestra el componente Login */}
+      <Login /> {
+        Testeo
+      }
     </div>
   );
 }
