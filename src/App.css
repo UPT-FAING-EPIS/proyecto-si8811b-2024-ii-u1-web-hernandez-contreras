@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+/* Contenedor general */
+.google-login-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* Asegura que el botón de Google Sign-In se centre correctamente */
+.g-signin2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px; /* Ajusta según el tamaño deseado del botón */
+}
+
+.google-signin-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+

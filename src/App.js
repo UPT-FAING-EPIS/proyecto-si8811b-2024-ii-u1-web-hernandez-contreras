@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <Login /> {/* muestra el componente Login */}
-      <LoginGoogle /> {/* muestra el componente Login de Google */}
+      <div className="google-login-container">
+        <LoginGoogle /> {/* muestra el componente Login de Google */}
+      </div>
     </div>
   );
 }
