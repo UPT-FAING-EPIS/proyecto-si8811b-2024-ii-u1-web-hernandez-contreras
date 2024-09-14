@@ -66,7 +66,7 @@ function App() {
 
   return (
     <div>
-      <h2>Login with Google</h2>
+      <h2>Ingresa con tu cuenta de Google</h2>
       <div className="g-signin2" data-onsuccess="onSignIn"></div>
     </div>
   );
