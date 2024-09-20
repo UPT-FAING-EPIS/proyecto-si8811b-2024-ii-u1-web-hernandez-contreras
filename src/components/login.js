@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { login } from '../services/api'; // importa la función para hacer solicitudes de login desde el archivo api.js
-import './login.css'; 
+import './estilos.css'; 
 
 const Login = () => {
   // estado local para almacenar el nombre de usuario
