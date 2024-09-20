@@ -9,7 +9,7 @@ export const Encabezado = () => {
   };
 
   return (
-    <div className="encabezado">
+    <div className="header">
       <div className="logo">Mi App</div>
       <div className="menu">
         <button onClick={toggleMenu} className="menu-button">
@@ -18,8 +18,8 @@ export const Encabezado = () => {
         {isOpen && (
           <ul className="menu-list">
             <li>Inicio</li>
-            <li>Cuenta</li>
             <li>Inasistencias</li>
+            <li>Cuenta</li>
           </ul>
         )}
       </div>
