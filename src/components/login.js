@@ -4,7 +4,7 @@ import './estilos.css';
 
 const Login = () => {
   // Estado local para almacenar el nombre de usuario
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   // Estado local para almacenar la contraseña
   const [password, setPassword] = useState('');
 
@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault(); // previene el comportamiento predeterminado del formulario (recarga de la página)
 
     // Llama a la función de login desde el archivo api.js, enviando el nombre de usuario y la contraseña
-    login(username, password)
+    login(email, password)
       .then(response => {
         // Si la solicitud es exitosa, maneja la respuesta aquí
         console.log('Login successful:', response.data);
@@ -34,8 +34,8 @@ const Login = () => {
           <label>Username</label> 
           <input
             type="text"
-            value={username} 
-            onChange={(e) => setUsername(e.target.value)} // actualiza el estado local con el nuevo valor
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} // actualiza el estado local con el nuevo valor
           />
         </div>
         <div>
