@@ -46,7 +46,9 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)} // actualiza el estado local con el nuevo valor
           />
         </div>
+        <div>
         <button type="submit">Acceder</button>
+        </div>
       </form>
     </div>
   );
