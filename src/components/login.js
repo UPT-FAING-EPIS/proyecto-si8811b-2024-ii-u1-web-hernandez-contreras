@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault(); // previene el comportamiento predeterminado del formulario (recarga de la página)
 
     // Llama a la función de login desde el archivo api.js, enviando el nombre de usuario y la contraseña
-    login(username, password)
+    login(email, password)
       .then(response => {
         // Si la solicitud es exitosa, maneja la respuesta aquí
         console.log('Login successful:', response.data);
