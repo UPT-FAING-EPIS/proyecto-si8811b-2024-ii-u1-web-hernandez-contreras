@@ -4,7 +4,7 @@ import './login.css';
 
 const Login = () => {
   // Estado local para almacenar el nombre de usuario
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   // Estado local para almacenar la contraseña
   const [password, setPassword] = useState('');
 
@@ -34,8 +34,8 @@ const Login = () => {
           <label>Username</label> 
           <input
             type="text"
-            value={username} 
-            onChange={(e) => setUsername(e.target.value)} // actualiza el estado local con el nuevo valor
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} // actualiza el estado local con el nuevo valor
           />
         </div>
         <div>
