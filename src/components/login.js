@@ -3,24 +3,24 @@ import { login } from '../services/api'; // importa la función para hacer solic
 import './estilos.css'; 
 
 const Login = () => {
-  // estado local para almacenar el nombre de usuario
+  // Estado local para almacenar el nombre de usuario
   const [username, setUsername] = useState('');
-  // estado local para almacenar la contraseña
+  // Estado local para almacenar la contraseña
   const [password, setPassword] = useState('');
 
-  // funcion que se ejecuta cuando se envía el formulario
+  // Función que se ejecuta cuando se envía el formulario
   const handleSubmit = (e) => {
     e.preventDefault(); // previene el comportamiento predeterminado del formulario (recarga de la página)
 
-    // llama a la función de login desde el archivo api.js, enviando el nombre de usuario y la contraseña
+    // Llama a la función de login desde el archivo api.js, enviando el nombre de usuario y la contraseña
     login(username, password)
       .then(response => {
-        // si la solicitud es exitosa, maneja la respuesta aquí
+        // Si la solicitud es exitosa, maneja la respuesta aquí
         console.log('Login successful:', response.data);
         // Ejemplo: redirige al usuario a otra página o almacena un token de autenticación
       })
       .catch(error => {
-        // si ocurre un error durante la solicitud, maneja el error aquí
+        // Si ocurre un error durante la solicitud, maneja el error aquí
         console.error('Login error:', error);
         // Ejemplo: muestra un mensaje de error al usuario
       });
